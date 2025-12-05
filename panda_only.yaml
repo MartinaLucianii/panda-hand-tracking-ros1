@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="robot" default="panda"/>
+  <arg name="arm_id" default="$(arg robot)" />
+  <include file="$(find franka_gazebo)/launch/panda.launch">
+    <arg name="controller" value="cartesian_impedance_example_controller" />
+  </include>
+
+</launch>
